@@ -1,0 +1,34 @@
+.navbar {
+    background-color: transparent;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: #f97300;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+
+/*header style*/
+.header {
+    background-image: url('https://farm2.staticflickr.com/1739/42703840221_4268cfcf7f_k.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
