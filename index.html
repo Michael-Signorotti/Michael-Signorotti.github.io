@@ -26,13 +26,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Font Awesome Animations can be found at the following URL:  http://l-lin.github.io/font-awesome-animation/-->
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+
+
 </head>
 
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
-        <!--<a class="navbar-brand" href="#">Michael Signorotti</a>-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">Michael Signorotti</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,11 +47,13 @@
                 <li class="nav-item">
                     <a class="nav-link" data-value="about" href="#">About</a> </li>
                 <li class="nav-item">
-                <a class="nav-link" data-value="skills" href="#">Skills</a> </li>
+                    <a class="nav-link" data-value="skills" href="#">Skills</a> </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="projects" href="#">Projects</a> </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link " data-value="research" href="#">Research</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="awards" href="#">Awards</a> </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="hobbies" href="#">Hobbies</a> </li>
                 <li class="nav-item">
@@ -55,8 +63,46 @@
     </nav>
 
     <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="description ">
+                    <h1><span id="nameTyped"></span>
+                        <!--Hello! My name is Michael Signorotti.-->
+                    </h1>
+                    <p>
+                        <!--I am a data scientist, software developer, and AI researher in the San Francisco Bay Area.--> <span id="bioTyped"></span>
+                    </p>
+                    <h2>
+                        <a href="https://www.linkedin.com/in/michaelsignorotti/" target="_blank" class="icons"><i class="header-icon fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Michael-Signorotti" target="_blank" class="icons"><i class="header-icon fab fa-github"></i></a>
+                        <a href="https://angel.co/michael-signorotti" target="_blank" class="icons"><i class="header-icon fab fa-angellist"></i></a>
+                        <a href="https://cal.berkeley.edu/michaelsignorotti" target="_blank" class="icons"><i class="header-icon fas fa-graduation-cap"></i></a>
+                        <a href="https://plus.google.com/+MichaelSignorotti" target="_blank" class="icons"><i class="header-icon fab fa-google-plus-g"></i></a>
+                        <a href="https://twitter.com/msignorotti15" target="_blank" class="icons"><i class="header-icon fab fa-twitter"></i></a>
+                        <a href="https://www.flickr.com/photos/142830278@N04/" target="_blank" class="icons"><i class="header-icon fab fa-flickr"></i></a>
+                    </h2>
+                </div>
 
+            </div>
+        </div>
     </header>
+
+    <div class="about" id="about">
+        <div class="container">
+            <h1 class="text-center">About</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="https://farm5.staticflickr.com/4837/45857042415_429bb40ac4_b.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -64,6 +110,40 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        function unhideHeaderIcons() {
+            $(".header-icon").addClass("faa-bounce animated animated-hover faa-fast")
+            $(".header-icon").addClass("full-opacity")
+            setTimeout(function() {
+                $('.header-icon').removeClass('animated');
+            }, 3000);
+        };
+        var nameOptions = {
+            strings: ["Hello! My name is Michael Signorotti."],
+            typeSpeed: 25,
+            startDelay: 500,
+            onComplete: test
+        }
+
+        function test() {
+            var bioOptions = {
+                strings: ["I am a data scientist, software developer, and AI researher in the San Francisco Bay Area."],
+                typeSpeed: 25,
+                startDelay: 250,
+                onComplete: unhideHeaderIcons
+            }
+            $("#nameTyped").siblings(".typed-cursor").css("animation", "none");
+            $("#nameTyped").siblings(".typed-cursor").css("opacity", "0");
+            var typedBio = new Typed("#bioTyped", bioOptions);
+        }
+
+
+        var typedName = new Typed("#nameTyped", nameOptions);
+
+    </script>
+
 
 </body>
 
