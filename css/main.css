@@ -90,13 +90,12 @@ h6 {
 .header {
     background: linear-gradient(rgba(20, 20, 20, .75),
         rgba(20, 20, 20, .75)),
-        url('https://farm5.staticflickr.com/4824/44596390480_8163cc816c_k.jpg');
+        url('https://farm5.staticflickr.com/4824/44596390480_96a1226539_h.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 
 }
-
 
 .header .icons {
     

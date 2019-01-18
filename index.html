@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Portfolio">
     <meta name="author" content="Michael Signorotti">
-    <link rel="icon" href="icon.ico">
+    <!--<link rel="icon" href="icon.ico">-->
 
     <title>Michael Signorotti</title>
 
@@ -83,8 +83,8 @@
                     </h2>
                 </div>
                 <div id="header-scroll-icon">
-                    
-                <h1><i id="scroll-indicator" class="fas fa-chevron-down color-light"></i></h1>
+
+                    <h1><i id="scroll-indicator" class="fas fa-chevron-down color-light"></i></h1>
                 </div>
 
             </div>
@@ -127,7 +127,6 @@
         var nameOptions = {
             strings: ["Hello! My name is Michael Signorotti."],
             typeSpeed: 25,
-            startDelay: 500,
             onComplete: test
         }
 
@@ -143,8 +142,9 @@
             var typedBio = new Typed("#bioTyped", bioOptions);
         }
 
-
-        var typedName = new Typed("#nameTyped", nameOptions);
+        $(window).on('load', function() {
+            var typedName = new Typed("#nameTyped", nameOptions);
+        });
 
     </script>
 
