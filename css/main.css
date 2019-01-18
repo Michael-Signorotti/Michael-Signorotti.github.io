@@ -116,6 +116,19 @@ h6 {
     -o-transition: opacity 2s ease-in;
     transition: opacity 2s ease-in;
 }
+
+#header-scroll-icon {
+  position:absolute;
+  bottom:15px;
+  left: 50%; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.color-light {
+    color: #DEF2F1;
+}
 .full-opacity {
     opacity: 1;
 }
@@ -145,12 +158,6 @@ h6 {
     font-size: 20px;
     width: 60%;
     line-height: 1.5;
-}
-
-.description button {
-    border: 1px solid #3AAFA9;
-    background: #3AAFA9;
-    color: #fff;
 }
 
 .about {
