@@ -98,7 +98,7 @@ h6 {
 }
 
 .header .icons {
-    
+
     color: #3AAFA9;
     padding-right: 20px;
 }
@@ -109,7 +109,7 @@ h6 {
 
 .header-icon {
     opacity: 0;
-        -webkit-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;
     -ms-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
@@ -117,17 +117,18 @@ h6 {
 }
 
 #header-scroll-icon {
-  position:absolute;
-  bottom:15px;
-  left: 50%; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .color-light {
     color: #DEF2F1;
 }
+
 .full-opacity {
     opacity: 1;
 }
@@ -192,3 +193,19 @@ h6 {
     line-height: 2;
     color: #17252A;
 }
+
+/*
+ * Footer
+ */
+.footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    background-color: #17252A;
+}
+
+#particles-js-footer {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
