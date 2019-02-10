@@ -49,7 +49,7 @@
                 <li class="nav-item">
                     <a class="nav-link" data-value="skills" href="#">Skills</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="projects" href="#">Projects</a> </li>
+                    <a class="nav-link " data-value="work" href="#">Work</a> </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="research" href="#">Research</a> </li>
                 <li class="nav-item">
@@ -62,10 +62,10 @@
         </div>
     </nav>
 
-    <header class="header">
-        <div class="overlay" id="particles-js-header">
+    <div class="header" id="particles-js-header">
+        <div class="overlay">
             <div class="container">
-                <div class="description ">
+                <div class="description">
                     <h1><span id="nameTyped"></span>
                         <!--Hello! My name is Michael Signorotti.-->
                     </h1>
@@ -76,10 +76,12 @@
                         <a href="https://www.linkedin.com/in/michaelsignorotti/" target="_blank" class="icons"><i class="header-icon fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/Michael-Signorotti" target="_blank" class="icons"><i class="header-icon fab fa-github"></i></a>
                         <a href="https://angel.co/michael-signorotti" target="_blank" class="icons"><i class="header-icon fab fa-angellist"></i></a>
+                        <a href="https://www.kaggle.com/msignorotti" target="_blank" class="icons"><i class="header-icon fab fa-kaggle"></i></a>
                         <a href="https://cal.berkeley.edu/michaelsignorotti" target="_blank" class="icons"><i class="header-icon fas fa-graduation-cap"></i></a>
                         <a href="https://plus.google.com/+MichaelSignorotti" target="_blank" class="icons"><i class="header-icon fab fa-google-plus-g"></i></a>
                         <a href="https://twitter.com/msignorotti15" target="_blank" class="icons"><i class="header-icon fab fa-twitter"></i></a>
                         <a href="https://www.flickr.com/photos/142830278@N04/" target="_blank" class="icons"><i class="header-icon fab fa-flickr"></i></a>
+                        <a href="mailto:michael.signorotti@gmail.com" target="_blank" class="icons"><i class="header-icon fas fa-envelope"></i></a>
                     </h2>
                 </div>
                 <div id="header-scroll-icon">
@@ -89,16 +91,16 @@
 
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="about" id="about">
         <div class="container">
             <h1 class="text-center">About</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <img src="https://farm5.staticflickr.com/4837/45857042415_429bb40ac4_b.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                <div class="col-lg-8 col-md-12 col-sm-12 desc">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
@@ -109,9 +111,19 @@
 
 
     <div class="footer" id="particles-js-footer">
-
-
-
+        <div class="footer-elements">
+            <h2>
+                <a href="https://www.linkedin.com/in/michaelsignorotti/" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Michael-Signorotti" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-github"></i></a>
+                <a href="https://angel.co/michael-signorotti" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-angellist"></i></a>
+                <a href="https://www.kaggle.com/msignorotti" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-kaggle"></i></a>
+                <a href="https://cal.berkeley.edu/michaelsignorotti" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fas fa-graduation-cap"></i></a>
+                <a href="https://plus.google.com/+MichaelSignorotti" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-google-plus-g"></i></a>
+                <a href="https://twitter.com/msignorotti15" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-twitter"></i></a>
+                <a href="https://www.flickr.com/photos/142830278@N04/" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fab fa-flickr"></i></a>
+                <a href="mailto:michael.signorotti@gmail.com" target="_blank" class="icons"><i class="faa-bounce animated-hover faa-fast fas fa-envelope"></i></a>
+            </h2>
+        </div>
     </div>
 
 
@@ -140,7 +152,7 @@
 
         function test() {
             var bioOptions = {
-                strings: ["I am a data scientist, software developer, and AI researher in the San Francisco Bay Area."],
+                strings: ["I am a data scientist, software developer, and AI researcher in the San Francisco Bay Area."],
                 typeSpeed: 25,
                 startDelay: 250,
                 onComplete: unhideHeaderIcons
@@ -153,6 +165,7 @@
         $(window).on('load', function() {
             var typedName = new Typed("#nameTyped", nameOptions);
         });
+
     </script>
     <script src="js/particles.min.js"></script>
     <script src="js/particles-header.js"></script>

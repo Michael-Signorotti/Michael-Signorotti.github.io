@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 
+
 .header h1,
 h2,
 h3,
@@ -198,7 +199,8 @@ h6 {
  * Footer
  */
 .footer {
-    padding: 2.5rem 0;
+    /*padding: 2.5rem 0;*/
+    padding-bottom: 5rem;
     text-align: center;
     background-color: #17252A;
 }
@@ -209,3 +211,24 @@ h6 {
     height: 50%;
 }
 
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.footer .icons {
+    color: #3AAFA9;
+    padding-right: 20px;
+}
+
+.footer .icons:hover {
+    color: #DEF2F1;
+}
+
+.footer-elements {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    margin-left: -100px;
+    transform: translateX(-30%);
+}
