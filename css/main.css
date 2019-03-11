@@ -198,22 +198,16 @@ h6 {
 /*
  * Footer
  */
+
 .footer {
-    /*padding: 2.5rem 0;*/
-    padding-bottom: 5rem;
-    text-align: center;
-    background-color: #17252A;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #17252A;
+  border-top: .05rem solid #2B7A78;
 }
-
-#particles-js-footer {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-}
-
-canvas {
-    display: block;
-    vertical-align: bottom;
+.footer p:last-child {
+  margin-bottom: 0;
 }
 
 .footer .icons {
