@@ -124,12 +124,12 @@ h6 {
         url('https://farm5.staticflickr.com/4824/44596390480_96a1226539_h.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    @media (max-width: @iphone-screen) {
+    @media (max-width: 768px) {
         background-attachment: scroll;
     }
 }
