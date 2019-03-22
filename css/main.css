@@ -133,7 +133,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-
     .header {
         background-attachment: scroll;
         background: linear-gradient(rgba(20, 20, 20, .75),
@@ -148,7 +147,6 @@ h6 {
 }
 
 .header .icons {
-
     color: #3AAFA9;
     padding-right: 20px;
 }
@@ -193,13 +191,6 @@ h6 {
     top: 0;
 }*/
 
-.description {
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-}
-
 .description h1 {
     color: #3AAFA9;
 }
@@ -207,8 +198,8 @@ h6 {
 .description p {
     color: #DEF2F1;
     font-size: 20px;
-    width: 60%;
     line-height: 1.5;
+    max-width: 80%;
 }
 
 .about {
@@ -424,22 +415,24 @@ h6 {
     border-bottom-left-radius: 50%;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-}
+@media only screen and (min-width: 769px) {
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+    }
 
-.timeline > li.timeline-inverted > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-}
+    .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
+    .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
 }
 
 .timeline-badge.primary {
@@ -484,7 +477,20 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-    #header-links {
-        display: none;
+    .offset-md-1 > .timeline:before {
+        left: 90%;
     }
+    .offset-md-1 > .timeline > li > .timeline-badge {
+        left: 90%;
+    }
+    .offset-md-1 > .timeline > li > .timeline-panel {
+        width: 80%;
+        float: left;
+    }
+    .offset-md-1 > .timeline > li > .timeline-panel:before {
+        
+    }
+    /* #header-links {
+        display: none;
+    } */
 }
