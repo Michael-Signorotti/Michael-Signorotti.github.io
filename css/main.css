@@ -167,10 +167,8 @@ h6 {
 #header-scroll-icon {
     position: absolute;
     bottom: 15px;
-    left: 50%;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .color-light {
@@ -291,7 +289,7 @@ h6 {
     color: #999;
     text-align: center;
     background-color: #17252A;
-    border-top: .05rem solid #2B7A78;
+    border-top: 1rem solid #2B7A78;
 }
 
 .footer p:last-child {
