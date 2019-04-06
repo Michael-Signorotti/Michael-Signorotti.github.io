@@ -488,7 +488,7 @@ h6 {
     .offset-md-1 > .timeline > li > .timeline-panel:before {
         
     }
-    /* #header-links {
-        display: none;
-    } */
+    .about .desc {
+        border-left: 0px;
+    }
 }
