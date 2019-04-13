@@ -257,6 +257,10 @@ h6 {
     color: #3AAFA9;
 }
 
+.card-shadow {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
 .experience {
     margin: 4em 0;
     padding: 1em;
