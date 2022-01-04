@@ -52,6 +52,16 @@ h6 {
     font-weight: 100;
 }
 
+.links h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 .contact h1,
 h2,
 h3,
@@ -123,7 +133,7 @@ h6 {
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+    text-align: center;
 }
 
 /*header style*/
@@ -283,6 +293,17 @@ h6 {
 }
 
 .education h1 {
+    color: #2B7A78;
+    margin: 2em;
+}
+
+.links {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.links h1 {
     color: #2B7A78;
     margin: 2em;
 }
@@ -485,20 +506,37 @@ h6 {
     margin-top: 5px;
 }
 
+.btn-view-link:hover,
+.btn-view-link:focus,
+.btn-view-link:active,
+.btn-view-link.active,
+.open > .dropdown-toggle.btn-view-link {
+    color: #fff;
+    background-color: #3AAFA9;
+    border-color: #3AAFA9;
+    box-shadow: none;
+}
+
+.link-title {
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px) {
     .offset-md-1 > .timeline:before {
         left: 90%;
     }
+
     .offset-md-1 > .timeline > li > .timeline-badge {
         left: 90%;
     }
+
     .offset-md-1 > .timeline > li > .timeline-panel {
         width: 80%;
         float: left;
     }
-    .offset-md-1 > .timeline > li > .timeline-panel:before {
-        
-    }
+
+    .offset-md-1 > .timeline > li > .timeline-panel:before {}
+
     .about .desc {
         border-left: 0px;
     }
