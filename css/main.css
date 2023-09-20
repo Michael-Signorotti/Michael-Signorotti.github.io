@@ -52,6 +52,16 @@ h6 {
     font-weight: 100;
 }
 
+.patents h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 .links h1,
 h2,
 h3,
@@ -293,6 +303,11 @@ h6 {
 }
 
 .education h1 {
+    color: #2B7A78;
+    margin: 2em;
+}
+
+.patents h1 {
     color: #2B7A78;
     margin: 2em;
 }
