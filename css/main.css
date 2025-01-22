@@ -62,6 +62,16 @@ h6 {
     font-weight: 100;
 }
 
+.conference-presentations h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 .links h1,
 h2,
 h3,
@@ -312,6 +322,11 @@ h6 {
     margin: 2em;
 }
 
+.conference-presentations h1 {
+    color: #2B7A78;
+    margin: 2em;
+}
+
 .links {
     margin: 4em 0;
     padding: 1em;
@@ -555,4 +570,23 @@ h6 {
     .about .desc {
         border-left: 0px;
     }
+}
+
+.card {
+    border: 1px solid #ddd; /* Optional: Adds a border */
+    border-radius: 10px; /* Optional: Rounds corners */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for emphasis */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #2B7A78; /* Ensure the title matches the other headers */
+    font-weight: bold;
+}
+
+.card-text.text-muted {
+    color: #6c757d; /* Adjusted muted text color */
 }
