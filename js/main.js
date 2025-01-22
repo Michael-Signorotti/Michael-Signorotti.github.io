@@ -3,6 +3,13 @@ $(document).ready(function () {
 
     $('#scroll-indicator').addClass('faa-bounce animated faa-slow');
     $('.navbar-toggler-icon').css("color", "#FEFFFF");
+
+    // Scroll down when clicking on the carrot down symbol
+    $('#scroll-indicator').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.about').offset().top
+        }, 1000);
+    });
 });
 
 $(".navbar a").click(function () {
