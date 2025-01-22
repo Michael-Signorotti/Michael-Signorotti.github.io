@@ -1,95 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400');
 
-
-.header h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
+body, .header h1, h2, h3, h4, h5, h6, a,
+.about h1, h2, h3, h4, h5, h6,
+.skills h1, h2, h3, h4, h5, h6,
+.experience h1, h2, h3, h4, h5, h6,
+.education h1, h2, h3, h4, h5, h6,
+.patents h1, h2, h3, h4, h5, h6,
+.conference-presentations h1, h2, h3, h4, h5, h6,
+.links h1, h2, h3, h4, h5, h6,
+.contact h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-}
-
-
-.about h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.skills h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.experience h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.education h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.patents h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.conference-presentations h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.links h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.contact h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 200; /* Ensure all fonts have a weight of 200 */
 }
 
 .navbar-scrolling {
@@ -229,6 +150,8 @@ h6 {
 }*/
 
 .description h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Ensure the typed text has a weight of 400 */
     color: #3AAFA9;
 }
 
@@ -582,9 +505,16 @@ h6 {
     padding: 1.5rem;
 }
 
-.card-title {
-    color: #2B7A78; /* Ensure the title matches the other headers */
-    font-weight: bold;
+.card-title, .timeline-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Adjust the title font weight to be slightly less bold */
+    color: #17252A; /* Ensure the title matches the dark aqua theme */
+}
+
+.card-text, .timeline-body > p, .timeline-body > ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200; /* Ensure the text uses Roboto 200 */
+    color: #000; /* Ensure the text color is black */
 }
 
 .card-text.text-muted {
